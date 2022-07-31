@@ -366,6 +366,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      spaceMono: ['Space Mono', 'sans-serif'],
       mono: [
         'ui-monospace',
         'SFMono-Regular',
@@ -383,6 +384,7 @@ module.exports = {
       base: ['1rem', { lineHeight: '1.5rem' }],
       lg: ['1.125rem', { lineHeight: '1.75rem' }],
       xl: ['1.25rem', { lineHeight: '1.75rem' }],
+      '2.5xl': ['1.625rem', {lineHeight: '2rem' }],
       '2xl': ['1.5rem', { lineHeight: '2rem' }],
       '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
       '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
