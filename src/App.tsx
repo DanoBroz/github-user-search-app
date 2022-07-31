@@ -1,4 +1,4 @@
-import { Navigation, Search } from "./components";
+import { Navigation, Search, UserCard } from "./components";
 import { useDarkmode } from "./hooks";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <main className="font-spaceMono w-[730px]">
         <Navigation />
         <Search />
+        <UserCard />
       </main>
     </div>
   );
