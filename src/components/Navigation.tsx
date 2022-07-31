@@ -6,7 +6,7 @@ export const Navigation = () =>
     const { colorTheme, setTheme, isDark } = useDarkmode()
 
     return (
-        <nav className="flex justify-between">
+        <nav className="flex justify-between pb-9">
             <span className="text-[#222731] dark:text-white font-bold text-2.5xl">devfinder</span>
             <button
                 className="text-sm text-[#697C9A] uppercase font-bold flex items-center gap-1 tracking-[2.5px] transition-colors dark:text-white hover:text-[#222731] dark:hover:text-[#90A4D4]"
