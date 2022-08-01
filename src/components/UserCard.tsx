@@ -1,9 +1,11 @@
+import { useState } from "react"
 import { UserFollowUp, UserLinks } from "../containers"
 import '../styles/user.css'
 import { UserImage } from "./UserImage"
 
 export const UserCard = () =>
 {
+
     return (
         <div className="user-card p-12 shadow-light bg-white rounded-[10px] dark:bg-[#1E2A47] dark:shadow-none">
             <UserImage className='user-image' />
