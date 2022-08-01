@@ -9,6 +9,7 @@ function App() {
   const handleSetSearchData = (searchData: any) =>
   {
     setSearchData(searchData)
+    console.log(searchData)
   }
 
   return (

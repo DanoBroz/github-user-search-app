@@ -1,0 +1,1 @@
+export { defaultData } from './defaultdata'

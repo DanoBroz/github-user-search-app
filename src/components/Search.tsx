@@ -1,11 +1,9 @@
-import axios from "axios"
-import { ChangeEvent, useRef, useState, FormEvent, useEffect } from "react"
+import { ChangeEvent, useEffect, useRef, useState } from "react"
+import { useSearchSubmit } from "../hooks"
 
 export const Search = ({ handleSetSearchData }: any) =>
 {
     const [searchValue, setSearchValue] = useState('')
-    const [showNoResults, setShowNoResults] = useState(false)
-    const [gitUserData, setGitUserData] = useState({})
     const searchRef = useRef(null)
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) =>
@@ -13,17 +11,11 @@ export const Search = ({ handleSetSearchData }: any) =>
         setSearchValue(e.target.value)
     }
 
-    const handleSubmit = async (e: FormEvent<HTMLFormElement>) =>
-    {
-        e.preventDefault()
-        try {
-            const data = await axios.get(`https://api.github.com/users/${searchValue}`)
-            setShowNoResults(false)
-            setGitUserData(data)
-        } catch (err) {
-            setShowNoResults(true)
-        }
-    }
+    const {
+        gitUserData,
+        handleSubmit,
+        showNoResults
+    } = useSearchSubmit({ searchValue })
 
     useEffect(() =>
     {
