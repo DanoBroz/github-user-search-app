@@ -1,0 +1,42 @@
+
+.user-card {
+    display: grid;
+    grid-template-columns: 'auto auto';
+    grid-column-gap: 37px;
+    grid-template-areas:
+        'user-main user-main'
+        'user-bio user-bio'
+        'followup followup'
+        'user-links user-links';
+}
+
+.user-image {
+    grid-area: user-image;
+    @apply hidden md:block;
+}
+
+.user-image--mobile {
+    @apply md:hidden;
+}
+
+.user-main {
+    grid-area: user-main;
+}
+.user-bio { grid-area: user-bio; }
+
+.followup { grid-area: followup; }
+
+.user-links { grid-area: user-links; }
+
+
+@screen md {
+    .user-card {
+        grid-template-columns: 'auto auto auto';
+        grid-template-areas:
+        'user-image user-main user-main'
+        'user-image user-bio user-bio'
+        '. followup followup'
+        '. user-links user-links';
+    }
+}
+

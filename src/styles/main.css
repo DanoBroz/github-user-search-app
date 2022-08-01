@@ -467,6 +467,15 @@ video {
 .ml-6 {
   margin-left: 1.5rem;
 }
+.mb-\[33px\] {
+  margin-bottom: 33px;
+}
+.mr-\[41px\] {
+  margin-right: 41px;
+}
+.mb-\[23px\] {
+  margin-bottom: 23px;
+}
 .mb-\[30px\] {
   margin-bottom: 30px;
 }
@@ -488,8 +497,8 @@ video {
 .w-screen {
   width: 100vw;
 }
-.w-\[730px\] {
-  width: 730px;
+.w-4\/5 {
+  width: 80%;
 }
 .w-5 {
   width: 1.25rem;
@@ -552,8 +561,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'https\:\/\/github\.com\/images\/error\/octocat_happy\.gif\'\)\] {
-  background-image: url('https://github.com/images/error/octocat_happy.gif');
+.bg-\[url\(\'https\:\/\/avatars\.githubusercontent\.com\/u\/583231\?v\=4\'\)\] {
+  background-image: url('https://avatars.githubusercontent.com/u/583231?v=4');
 }
 .bg-cover {
   background-size: cover;
@@ -609,6 +618,9 @@ video {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.text-center {
+  text-align: center;
+}
 .font-spaceMono {
   font-family: Space Mono, sans-serif;
 }
@@ -620,12 +632,11 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-\[13px\] {
   font-size: 13px;
+}
+.text-\[16px\] {
+  font-size: 16px;
 }
 .text-\[22px\] {
   font-size: 22px;
@@ -728,7 +739,62 @@ video {
 }
 @media (min-width: 640px) {
 
+  .sm\:mb-\[24px\] {
+    margin-bottom: 24px;
+  }
+
+  .sm\:mb-\[32px\] {
+    margin-bottom: 32px;
+  }
+
+  .sm\:w-\[573px\] {
+    width: 573px;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
+  .sm\:text-\[26px\] {
+    font-size: 26px;
+  }
+
+  .sm\:text-\[15px\] {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+
+  .md\:w-\[730px\] {
+    width: 730px;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-\[1rem\] {
+    font-size: 1rem;
   }
 }
