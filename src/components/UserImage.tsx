@@ -1,8 +1,16 @@
-import { HTMLAttributes } from "react"
+import { HTMLAttributes } from 'react'
 
-export const UserImage = ({ className }: HTMLAttributes<HTMLDivElement>) =>
-{
+interface Config {
+    avatarUrl: string
+}
+
+type UserImageProps = HTMLAttributes<HTMLDivElement> & Config
+
+export const UserImage = ({ className, avatarUrl }: UserImageProps) => {
     return (
-        <div className={`w-[117px] h-[117px] bg-[url('https://avatars.githubusercontent.com/u/583231?v=4')] rounded-full bg-center bg-no-repeat bg-cover ${className}`}></div>
+        <div
+            style={{ backgroundImage: `url('${avatarUrl})` }}
+            className={`w-[117px] h-[117px] rounded-full bg-center bg-no-repeat bg-cover ${className}`}
+        ></div>
     )
 }

@@ -1,1 +1,1 @@
-export { defaultData } from './defaultdata'
+export { defaultData } from './defaultData'

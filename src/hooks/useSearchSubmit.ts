@@ -9,7 +9,7 @@ interface SubmitProps
 export const useSearchSubmit = ({ searchValue }: SubmitProps) =>
 {
     const [showNoResults, setShowNoResults] = useState(false)
-    const [gitUserData, setGitUserData] = useState({})
+    const [gitUserData, setGitUserData] = useState()
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) =>
     {
@@ -17,7 +17,8 @@ export const useSearchSubmit = ({ searchValue }: SubmitProps) =>
         try {
             const data = await axios.get(`https://api.github.com/users/${searchValue}`)
             setShowNoResults(false)
-            setGitUserData(data)
+            setGitUserData(await data?.data)
+            console.log(data.data)
         } catch (err) {
             setShowNoResults(true)
         }
