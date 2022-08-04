@@ -2,7 +2,7 @@ import type { AnchorHTMLAttributes } from 'react'
 
 interface Props {
     content: string
-    hasLongText: boolean
+    hasLongText?: boolean
 }
 
 type UserLinkProps = AnchorHTMLAttributes<HTMLAnchorElement | HTMLSpanElement> & Props
