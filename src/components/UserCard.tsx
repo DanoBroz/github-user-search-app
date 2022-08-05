@@ -2,6 +2,7 @@ import type { DefaultData } from '../App'
 import { UserFollowUp, UserLinks } from '../containers'
 import '../styles/user.css'
 import { UserImage } from './UserImage'
+import moment from 'moment'
 
 export const UserCard = (userData: DefaultData) => {
     return (
@@ -17,7 +18,7 @@ export const UserCard = (userData: DefaultData) => {
                         <span className='text-[#0079FF]'>@{userData?.login}</span>
                     </div>
                     <span className='text-[#4B6A9B] dark:text-white md:pt-2'>
-                        Joined {new Date(userData?.created_at).toDateString()}
+                        Joined {moment(userData?.created_at).format('DD MMM yyy')}
                     </span>
                 </div>
             </div>
