@@ -1,4 +1,3 @@
-
 .user-card {
     display: grid;
     grid-template-columns: 'auto auto';
@@ -22,21 +21,31 @@
 .user-main {
     grid-area: user-main;
 }
-.user-bio { grid-area: user-bio; }
+.user-bio {
+    grid-area: user-bio;
+}
 
-.followup { grid-area: followup; }
+.followup {
+    grid-area: followup;
+}
 
-.user-links { grid-area: user-links; }
+.user-links {
+    grid-area: user-links;
+}
 
+@screen sm {
+    .user-links {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    }
+}
 
 @screen md {
     .user-card {
         grid-template-columns: 'auto auto auto';
         grid-template-areas:
-        'user-image user-main user-main'
-        'user-image user-bio user-bio'
-        '. followup followup'
-        '. user-links user-links';
+            'user-image user-main user-main'
+            'user-image user-bio user-bio'
+            '. followup followup'
+            '. user-links user-links';
     }
 }
-

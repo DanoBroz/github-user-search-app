@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Navigation, Search, UserCard } from './components'
-import { UserImage } from './components/UserImage'
-import { UserFollowUp, UserLinks } from './containers'
 import { useDarkmode } from './hooks'
 import { defaultData } from './lib'
 
@@ -35,7 +33,7 @@ function App() {
 
     return (
         <div className='flex justify-center items-center transition-colors bg-[#F6F8FF] dark:bg-[#141D2F] h-screen w-screen'>
-            <main className='font-spaceMono w-4/5 sm:w-[573px] md:w-[730px]'>
+            <main className='container font-spaceMono sm:w-[573px] md:w-[730px]'>
                 <Navigation />
                 <Search handleSetSearchData={handleSetSearchData} />
                 <UserCard {...searchData} />
