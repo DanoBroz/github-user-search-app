@@ -7,4 +7,5 @@ module.exports = {
     endOfLine: 'lf',
     jsxSingleQuote: true,
     bracketSpacing: true,
+    "singleAttributePerLine": true,
 }

@@ -7,10 +7,18 @@ import moment from 'moment'
 export const UserCard = (userData: DefaultData) => {
     return (
         <div className='user-card rounded-[10px] bg-white p-6 shadow-light dark:bg-[#1E2A47] dark:shadow-none sm:p-10 md:p-12'>
-            {userData.avatar_url && <UserImage avatarUrl={userData?.avatar_url} className='user-image' />}
+            {userData.avatar_url && (
+                <UserImage
+                    avatarUrl={userData?.avatar_url}
+                    className='user-image'
+                />
+            )}
             <div className='user-main mb-[33px] flex transition-colors sm:mb-[24px] md:mb-[20px]'>
                 {userData?.avatar_url && (
-                    <UserImage avatarUrl={userData?.avatar_url} className='user-image--mobile mr-5 sm:mr-[41px]' />
+                    <UserImage
+                        avatarUrl={userData?.avatar_url}
+                        className='user-image--mobile mr-5 sm:mr-[41px]'
+                    />
                 )}
                 <div className='flex flex-col md:w-full md:flex-row md:justify-between'>
                     <div className='flex flex-col'>
