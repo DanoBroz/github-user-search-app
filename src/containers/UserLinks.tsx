@@ -19,7 +19,7 @@ export const UserLinks = (userData: UserLinksProps) => {
             </UserLink>
             <UserLink
                 content={userData?.twitter_username || 'Not Available'}
-                href={`https://twitter.com/${userData?.twitter_username}`}
+                href={userData?.twitter_username ? `https://twitter.com/${userData?.twitter_username}` : undefined}
             >
                 <svg
                     className='w-5 fill-[#4b6a9b] dark:fill-white'
@@ -32,7 +32,7 @@ export const UserLinks = (userData: UserLinksProps) => {
             </UserLink>
             <UserLink
                 content={userData?.blog || 'Not Available'}
-                href={userData?.blog}
+                href={userData?.blog || undefined}
             >
                 <svg
                     className='w-5 fill-[#4b6a9b] dark:fill-white'
