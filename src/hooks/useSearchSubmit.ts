@@ -18,7 +18,6 @@ export const useSearchSubmit = ({ searchValue }: SubmitProps) =>
             const data = await axios.get(`https://api.github.com/users/${searchValue}`)
             setShowNoResults(false)
             setGitUserData(await data?.data)
-            console.log(data.data)
         } catch (err) {
             setShowNoResults(true)
         }
