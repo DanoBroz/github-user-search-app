@@ -32,7 +32,7 @@ function App() {
     const handleSetSearchData = (searchData: any) => setSearchData(searchData)
 
     return (
-        <div className='flex justify-center items-center transition-colors bg-[#F6F8FF] dark:bg-[#141D2F] h-screen w-screen'>
+        <div className='flex h-screen w-screen items-center justify-center bg-[#F6F8FF] transition-colors dark:bg-[#141D2F]'>
             <main className='container font-spaceMono sm:w-[573px] md:w-[730px]'>
                 <Navigation />
                 <Search handleSetSearchData={handleSetSearchData} />

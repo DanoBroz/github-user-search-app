@@ -10,13 +10,13 @@ type UserLinkProps = AnchorHTMLAttributes<HTMLAnchorElement | HTMLSpanElement> &
 export const UserLink = ({ content, href, children, hasLongText }: UserLinkProps) => {
     // TODO: render anchor element based on href nullability
     return href !== null ? (
-        <a className='flex items-center gap-4 text-[13px] sm:text-[15px] text-[#4B6A9B] dark:text-white' href={href}>
-            <span className='w-5 h-5'>{children}</span>
+        <a className='flex items-center gap-4 text-[13px] text-[#4B6A9B] dark:text-white sm:text-[15px]' href={href}>
+            <span className='h-5 w-5'>{children}</span>
             <span className='truncate'>{content}</span>
         </a>
     ) : (
-        <span className='flex items-center gap-4 text-[13px] sm:text-[15px] text-[#4B6A9B] dark:text-white'>
-            <span className='w-5 h-5'>{children}</span>
+        <span className='flex items-center gap-4 text-[13px] text-[#4B6A9B] dark:text-white sm:text-[15px]'>
+            <span className='h-5 w-5'>{children}</span>
             <span className='truncate'>{content}</span>
         </span>
     )
