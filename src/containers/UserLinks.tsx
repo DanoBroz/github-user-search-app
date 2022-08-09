@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { DefaultData } from '../App'
+import { DefaultData } from '../types'
 import { UserLink } from '../components'
 
 type UserLinksProps = Pick<DefaultData, 'blog' | 'company' | 'twitter_username' | 'location'>

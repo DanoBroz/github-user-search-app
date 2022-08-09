@@ -2,23 +2,7 @@ import { useEffect, useState } from 'react'
 import { Navigation, Search, UserCard } from './components'
 import { useDarkmode } from './hooks'
 import { defaultData } from './lib'
-
-export interface DefaultData {
-    name: string
-    login: string
-    avatar_url?: string
-    url: string
-    bio?: string
-    created_at: string
-    followers: number
-    following: number
-    public_repos: number
-    location?: string
-    email?: null
-    blog?: string
-    twitter_username?: null
-    company?: string
-}
+import type { DefaultData } from './types'
 
 function App() {
     useDarkmode()
@@ -29,7 +13,7 @@ function App() {
         setSearchData(defaultData)
     }, [])
 
-    const handleSetSearchData = (searchData: any) => setSearchData(searchData)
+    const handleSetSearchData = (searchData: DefaultData) => setSearchData(searchData)
 
     return (
         <div className='flex h-screen w-screen items-center justify-center bg-[#F6F8FF] transition-colors dark:bg-[#141D2F]'>

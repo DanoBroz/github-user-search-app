@@ -1,4 +1,4 @@
-import type { DefaultData } from '../App'
+import type { DefaultData } from '../types'
 import { UserFollowUp, UserLinks } from '../containers'
 import '../styles/user.css'
 import { UserImage } from './UserImage'

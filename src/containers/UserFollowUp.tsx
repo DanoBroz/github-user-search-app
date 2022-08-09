@@ -1,4 +1,4 @@
-import { DefaultData } from '../App'
+import { DefaultData } from '../types'
 import { FollowUpItem } from '../components'
 
 type FollowUpProps = Pick<DefaultData, 'followers' | 'following' | 'public_repos'>
