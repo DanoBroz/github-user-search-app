@@ -25,7 +25,6 @@ Users should be able to:
 -   Search for GitHub users by their username
 -   See relevant user information based on their search
 -   Switch between light and dark themes
--   **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
 ### Screenshots
 
@@ -57,7 +56,7 @@ I had my first opportunity to try localStorage and use it with tailwind darkmode
 
 ### Continued development
 
-It was supposed to be a small challange, but in the end it turned out to be great eye-opener. This little side project reminded me to look into Fetch API, Promises and type checking.
+It was supposed to be a small challenge, but in the end it turned out to be great eye-opener. This little side project reminded me to look into Fetch API, Promises and type checking.
 
 ## Author
 
