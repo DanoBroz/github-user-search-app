@@ -27,7 +27,10 @@ Users should be able to:
 -   Switch between light and dark themes
 -   **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
-### Screenshot
+### Screenshots
+
+![Screenshot 2022-08-10 at 21 15 43](https://user-images.githubusercontent.com/39374917/184007794-a51531b3-9cdc-41e5-b252-942a286fb44d.png)
+![Screenshot 2022-08-10 at 21 15 56](https://user-images.githubusercontent.com/39374917/184007804-1e5a8ee8-cdae-40e0-b534-ea8bf9bf1678.png)
 
 ### Links
 
