@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/DanoBroz/github-user-search-app)
--   Live Site URL: [Add live site URL here](https://danobroz.github.io/github-user-search-app/)
+-   Solution URL: [ThisPage](https://github.com/DanoBroz/github-user-search-app)
+-   Live Site URL: [Github Pages live url](https://danobroz.github.io/github-user-search-app/)
 
 ## My process
 
