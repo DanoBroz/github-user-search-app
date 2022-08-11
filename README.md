@@ -25,14 +25,16 @@ Users should be able to:
 -   Search for GitHub users by their username
 -   See relevant user information based on their search
 -   Switch between light and dark themes
--   **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
-### Screenshot
+### Screenshots
+
+![Screenshot 2022-08-10 at 21 15 43](https://user-images.githubusercontent.com/39374917/184007794-a51531b3-9cdc-41e5-b252-942a286fb44d.png)
+![Screenshot 2022-08-10 at 21 15 56](https://user-images.githubusercontent.com/39374917/184007804-1e5a8ee8-cdae-40e0-b534-ea8bf9bf1678.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/DanoBroz/github-user-search-app)
--   Live Site URL: [Add live site URL here](https://danobroz.github.io/github-user-search-app/)
+-   Solution URL: [ThisPage](https://github.com/DanoBroz/github-user-search-app)
+-   Live Site URL: [Github Pages live url](https://danobroz.github.io/github-user-search-app/)
 
 ## My process
 
@@ -54,7 +56,7 @@ I had my first opportunity to try localStorage and use it with tailwind darkmode
 
 ### Continued development
 
-It was supposed to be a small challange, but in the end it turned out to be great eye-opener. This little side project reminded me to look into Fetch API, Promises and type checking.
+It was supposed to be a small challenge, but in the end it turned out to be great eye-opener. This little side project reminded me to look into Fetch API, Promises and type checking.
 
 ## Author
 
