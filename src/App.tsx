@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Navigation, Search, UserCard } from './components'
 import { useDarkmode } from './hooks'
 import { defaultData } from './lib'
@@ -8,10 +8,6 @@ function App() {
     useDarkmode()
 
     const [searchData, setSearchData] = useState<DefaultData>(defaultData)
-
-    useEffect(() => {
-        setSearchData(defaultData)
-    }, [])
 
     const handleSetSearchData = (searchData: DefaultData) => setSearchData(searchData)
 
