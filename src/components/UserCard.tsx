@@ -32,11 +32,9 @@ export const UserCard = (userData: DefaultData) => {
                     </span>
                 </div>
             </div>
-            {userData.bio && (
-                <p className='user-bio mb-[23px] text-[13px] font-light text-[#4B6A9B] transition-colors dark:text-white sm:mb-[32px] sm:text-[15px]'>
-                    {userData?.bio}
-                </p>
-            )}
+            <p className='user-bio mb-[23px] text-[13px] font-light text-[#4B6A9B] transition-colors dark:text-white sm:mb-[32px] sm:text-[15px]'>
+                {userData?.bio || 'This profile has no bio.'}
+            </p>
             <UserFollowUp {...userData} />
             <UserLinks {...userData} />
         </div>
