@@ -13,7 +13,7 @@ export const UserLink = ({ content, href, children, hasLongText }: UserLinkProps
     return href !== null ? (
         <a
             className={classnames('flex items-center gap-4 text-[13px] text-[#4B6A9B] dark:text-white sm:text-[15px]', {
-                'opacity-60': content === 'Not Available',
+                'opacity-20': content === 'Not Available',
             })}
             href={href}
         >
@@ -23,7 +23,7 @@ export const UserLink = ({ content, href, children, hasLongText }: UserLinkProps
     ) : (
         <span
             className={classnames('flex items-center gap-4 text-[13px] text-[#4B6A9B] dark:text-white sm:text-[15px]', {
-                'opacity-80': content === 'Not available',
+                'opacity-20': content === 'Not available',
             })}
         >
             <span className='h-5 w-5'>{children}</span>
